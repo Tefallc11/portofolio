@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="Fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body id="corps">
+    <nav>
+        <div class="container nav_container">
+
+            <a href="#" class="nav_logo">
+                <img src="img/log.jpg" alt="logo">
+            </a>
+
+            <ul class="nav_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav_button">
+                <button id="darkmode" class="nav_theme"><i class="bi bi-moon"></i></button>
+                <button class="nav_toggle-open"><i class="bi bi-list"></i></button>
+                <button class="nav_toggle-close"><i class="bi bi-x"></i></button>
+            </div>
+
+        </div>
+    </nav>
+    <!--##########################  END OF NAV  ############################-->
+
+
+    <header id="home">
+        <div class="container header_container">
+            <article class="header_image">
+                <div><img src="img/he1.jpg" alt=""></div>
+            </article>
+            <article class="header_content">
+                <h4>salut, je suis <span>Cypher</span></h4>
+                <h1>Developpeur web<br>Aspirant en cybersecurite</h1>
+                <p>Ma passion est l'informatique de
+                    façon général, j'aime apprendre
+                    et acquérir de nouvelle
+                    compétence. Je suis déterminer
+                    et près à m'investi</p>
+                <div class="header_cta">
+                    <a href="#contact" class="btn second">Contactez moi</a>
+                    <a href="#portofolio" class="btn">Portofolio</a>
+                </div>
+            </article>
+            <ul class="header_socials">
+                <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a></li>
+                <li><a href="https://linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://telegram.com/" target="_blank"><i class="bi bi-telegram"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <!--##########################  END OF HEADER  ############################-->
+
+    <section id="about">
+        <div class="container about_container">
+            <div class="about_image">
+                <img src="img/header.jpg" alt="">
+            </div>
+            <div class="about_details">
+                <h1>Apropos de moi</h1>
+                <div class="about_cards">
+
+                    <article class="about_card">
+                        <i class="bi bi-award"></i>
+                        <h4>Experience</h4>
+                        <small>+3 ans</small>
+                    </article>
+
+                    <article class="about_card">
+                        <i class="bi bi-unity"></i>
+                        <h4>Projects</h4>
+                        <small>+20 projets terminer</small>
+                    </article>
+
+                    <article class="about_card">
+                        <i class="bi bi-person-plus"></i>
+                        <h4>clients</h4>
+                        <small>+15 PME</small>
+                    </article>
+                </div>
+
+                <p>
+                    Cet ouvrage n'est pas une introduction à JavaScript. Les
+                    fonctions élémentaires y sont traitées mais nous avons
+                    tenté de mettre l'accent sur des informations de niveau
+                    intermédiaire à avancé
+                </p>
+                <p>
+                    L'idée est que, notamment si vos
+                    connaissances de JavaScript sont un peu rouillées, vous
+                    puissiez trouver les principaux problèmes et leurs solutions dans cet ouvrage
+                </p>
+                <a href="./CV professionnel noir simple.pdf" class="btn second" download target="_blank"><i
+                        class="bi bi-download"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!--##########################  END OF HEADER  ############################-->
+
+
+
+    <section id="services" class="services">
+        <h1>Services</h1>
+        <p>A Dependency Manager for PHP. Latest: 2.7.1 ( changelog) Getting Started Download. Documentation Browse
+            Packages.
+        </p>
+        <div class="container services_container">
+            <ul class="services_left">
+                <li class="service_item backend">
+                    <span><i class="bi bi-server"></i></span>
+                    <div>
+                        <h3>Backend</h3>
+                        <p>14 projects</p>
+                    </div>
+                </li>
+                <li class="service_item frontend">
+                    <span><i class="bi bi-pc-display"></i></span>
+                    <div>
+                        <h3>FrontEnd</h3>
+                        <p>20 projects</p>
+                    </div>
+                </li>
+                <li class="service_item python">
+                    <span><i class="bi bi-app"></i></span>
+                    <div>
+                        <h3>Python</h3>
+                        <p>10 projects</p>
+                    </div>
+                </li>
+            </ul>
+
+            <article class="services_right">
+
+                <p>beaucoup de temps passe et d'experience accumuler dans ces 3 domaines: backend, frontend et python</p>
+
+            </article>
+
+        </div>
+    </section>
+    <!--##########################  END OF SERVICES  ############################-->
+
+
+
+    <section id="projects" class="pojects">
+        <h1>Projets Recent</h1>
+        <p> Lorsque JavaScript est utilisé avec des liens, l'extrait suivant ne fonctionne pas comme prévu</p>
+        <ul class="projects_categories">
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".backend">Backend</li>
+            <li data-filter=".frontend">Frontend</li>
+            <li data-filter=".fullstack">Fullstack</li>
+        </ul>
+
+        <div class="container projects_container">
+            <!--1-->
+            <article class="project mix frontend" data-order="1">
+                <div class="project_image">
+                    <img src="img/pro-im1.jpg" alt="fullstack">
+                </div>
+                <h3>Projet fullstack</h3>
+                <p>
+                    A première vue, tout est correct : les utilisateurs possédant
+                    JavaScript obtiennent la fenêtre modale, ceux qui ne l'ont
+                    pas cliquent sur un lien menant vers une étiquette de texte
+                    vide ; rien d'inattendu ne survient.
+                </p>
+                <div class="project_cta">
+                    <a href="#" class="btn sm second" target="_blank">demo</a>
+                    <a href="#" class="btn sm" target="_blank">Github</a>
+                </div>
+            </article>
+            <!--2-->
+            <article class="project mix fullstack" data-order="2">
+                <div class="project_image">
+                    <img src="img/pro-im2.jpg" alt="fullstack">
+                </div>
+                <h3>Projet frontend</h3>
+                <p>
+                    A première vue, tout est correct : les utilisateurs possédant
+                    JavaScript obtiennent la fenêtre modale, ceux qui ne l'ont
+                    pas cliquent sur un lien menant vers une étiquette de texte
+                    vide ; rien d'inattendu ne survient.
+                </p>
+                <div class="project_cta">
+                    <a href="#" class="btn sm second" target="_blank">demo</a>
+                    <a href="#" class="btn sm" target="_blank">Github</a>
+                </div>
+            </article>
+            <!--3-->
+            <article class="project mix frontend" data-order="3">
+                <div class="project_image">
+                    <img src="img/pro-im3.jpg" alt="fullstack">
+                </div>
+                <h3>Projet fullstack</h3>
+                <p>
+                    A première vue, tout est correct : les utilisateurs possédant
+                    JavaScript obtiennent la fenêtre modale, ceux qui ne l'ont
+                    pas cliquent sur un lien menant vers une étiquette de texte
+                    vide ; rien d'inattendu ne survient.
+                </p>
+
+                <div class="project_cta">
+                    <a href="#" class="btn sm second" target="_blank">demo</a>
+                    <a href="#" class="btn sm" target="_blank">Github</a>
+                </div>
+            </article>
+            <!--4-->
+            <article class="project mix backend" data-order="4">
+                <div class="project_image">
+                    <img src="img/pro-im4.jpg" alt="fullstack">
+                </div>
+                <h3>Projet backend</h3>
+                <p>
+                    A première vue, tout est correct : les utilisateurs possédant
+                    JavaScript obtiennent la fenêtre modale, ceux qui ne l'ont
+                    pas cliquent sur un lien menant vers une étiquette de texte
+                    vide ; rien d'inattendu ne survient.
+                </p>
+                <div class="project_cta">
+                    <a href="#" class="btn sm second" target="_blank">demo</a>
+                    <a href="#" class="btn sm" target="_blank">Github</a>
+                </div>
+            </article>
+            <!--5-->
+            <article class="project mix fullstack" data-order="5">
+                <div class="project_image">
+                    <img src="img/pro-im5.jpg" alt="fullstack">
+                </div>
+                <h3>Projet frontend</h3>
+                <p>
+                    A première vue, tout est correct : les utilisateurs possédant
+                    JavaScript obtiennent la fenêtre modale, ceux qui ne l'ont
+                    pas cliquent sur un lien menant vers une étiquette de texte
+                    vide ; rien d'inattendu ne survient.
+                </p>
+                <div class="project_cta">
+                    <a href="#" class="btn sm second" target="_blank">demo</a>
+                    <a href="#" class="btn sm" target="_blank">Github</a>
+                </div>
+            </article>
+            <!--6-->
+            <article class="project mix backend" data-order="6">
+                <div class="project_image">
+                    <img src="img/pro-im5.jpg" alt="frontend">
+                </div>
+                <h3>Projet frontend</h3>
+                <p>
+                    A première vue, tout est correct : les utilisateurs possédant
+                    JavaScript obtiennent la fenêtre modale, ceux qui ne l'ont
+                    pas cliquent sur un lien menant vers une étiquette de texte
+                    vide ; rien d'inattendu ne survient.
+                </p>
+                <div class="project_cta">
+                    <a href="#" class="btn sm second" target="_blank">demo</a>
+                    <a href="#" class="btn sm" target="_blank">Github</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <!--##########################  END OF PROJECT  ############################-->
+
+
+
+    <!--<section class="swiper">
+        <h1>Qui sont mes clients ?</h1>
+        <p>petit texte pour remplire</p>
+        <div class="swiper-wrapper">
+            <figure class="swiper-slide">
+                <figcaption>
+                    A première vue, tout est correct : les utilisateurs possédant JavaScript obtiennent la fenêtre
+                    modale, ceux qui ne l'ont pas cliquent sur un lien
+                    menant vers une étiquette de texte vide ; rien d'inattendu ne survient
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="client_avatar">
+                        <img src="img/pro-im1.jpg" alt="">
+                    </div>
+                    <div class="client_detail">
+                        <h5>BERLIN</h5>
+                        <small>TEFAL</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    A première vue, tout est correct : les utilisateurs possédant JavaScript obtiennent la fenêtre
+                    modale, ceux qui ne l'ont pas cliquent sur un lien
+                    menant vers une étiquette de texte vide ; rien d'inattendu ne survient
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="client_avatar">
+                        <img src="img/pro-im1.jpg" alt="">
+                    </div>
+                    <div class="client_detail">
+                        <h5>BERLIN</h5>
+                        <small>TEFAL</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    A première vue, tout est correct : les utilisateurs possédant JavaScript obtiennent la fenêtre
+                    modale, ceux qui ne l'ont pas cliquent sur un lien
+                    menant vers une étiquette de texte vide ; rien d'inattendu ne survient
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="client_avatar">
+                        <img src="img/pro-im1.jpg" alt="">
+                    </div>
+                    <div class="client_detail">
+                        <h5>BERLIN</h5>
+                        <small>TEFAL</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    A première vue, tout est correct : les utilisateurs possédant JavaScript obtiennent la fenêtre
+                    modale, ceux qui ne l'ont pas cliquent sur un lien
+                    menant vers une étiquette de texte vide ; rien d'inattendu ne survient
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="client_avatar">
+                        <img src="img/pro-im1.jpg" alt="">
+                    </div>
+                    <div class="client_detail">
+                        <h5>BERLIN</h5>
+                        <small>TEFAL</small>
+                    </div>
+                </div>
+            </figure>
+
+            <figure class="swiper-slide">
+                <figcaption>
+                    A première vue, tout est correct : les utilisateurs possédant JavaScript obtiennent la fenêtre
+                    modale, ceux qui ne l'ont pas cliquent sur un lien
+                    menant vers une étiquette de texte vide ; rien d'inattendu ne survient
+                </figcaption>
+                <div class="swiper_client">
+                    <div class="client_avatar">
+                        <img src="img/pro-im1.jpg" alt="">
+                    </div>
+                    <div class="client_detail">
+                        <h5>BERLIN</h5>
+                        <small>TEFAL</small>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section> -->
+
+
+    <!--##########################  END OF PROJECT  ############################-->
+
+
+    <section id="contact" class="contact">
+        <div class="container contact_container">
+            <ul class="contact_list">
+                <li><a href="#" class="contact_item" target="_blank">
+                        <i class="bi bi-envelope"></i>
+                    </a></li>
+
+                <li><a href="#" class="contact_item" target="_blank">
+                        <i class="bi bi-telegram"></i>
+                    </a></li>
+
+                <li><a href="#" class="contact_item" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a></li>
+
+                <li><a href="#" class="contact_item" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a></li>
+            </ul>
+
+            <form class="contact_form" action="" method="post"><!--aller sur le site formsubmit-->
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="adresse mail">
+                <textarea rows="7" placeholder="message"></textarea>
+                <button type="submit" class="btn">envoyer</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container footer_container">
+            <ul class="footer_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul class="footer_socials">
+                <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a></li>
+                <li><a href="https://linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://telegram.com/" target="_blank"><i class="bi bi-telegram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer_copyright">
+            <small>2024 Berlin &copy; Tous droit reserver</small>
+        </div>
+    </footer>
+
+    <script src="./mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
